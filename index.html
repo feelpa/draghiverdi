@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset='utf-8' />
+        <title>Draghi verdi</title>
+        <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'/>
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin=""/>
+        <!-- leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <!-- custom css -->
+        <link rel='stylesheet' href='res/css/custom.css' />
+        <!-- geoJSON data -->
+        <script src="/res/data/vedovelle.geojson" type="text/javascript"></script>
+        <script src="/res/js/leaflet.ajax.min.js"></script>
+        <!-- geolocation control -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="text-center bkg cover">
+                <img src="res/img/logo.png" class="img-fluid cover-img"/>
+            </div>
+        </header>
+        
+        <!-- Mappa -->
+        <div class="row no-gutters">
+            <div class="col-md-12">
+                <div id="map-wrapper" class="map-wrapper">
+                    <div id='map'></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer bkg">
+                <div class="footer-content">
+                    MADE WITH &#10084;&#65039; IN MILAN
+                </div>
+            </div>
+        </footer>
+
+        <!-- custom script -->
+        <script src="/res/js/map.js"></script>
+    </body>
+</html>
