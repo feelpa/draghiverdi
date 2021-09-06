@@ -1,18 +1,22 @@
-/*@media all and (min-width: 850px) {
-    .footer-content {
-        padding-top: 1vh;
+@media screen and (min-width: 790px) {
+    .footer{
+        padding-top: 1.5vh !important;
     }
-}*/
+  }
 
 body {
     background-color: #004C00;
 }
 
 .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
     border-bottom: 4px solid #004C00;
 }
 .cover-img {
-    max-height: 120px;
+    max-height: 15vh;
 }
 
 #map {
@@ -26,11 +30,12 @@ body {
 .map-wrapper {
     position: fixed;
     width: 100%;
-    height: 78vh;
+    height: 80vh;
     display: flex;
 }
 
 .footer {
+    padding-top: 1vh;
     position: absolute;
     bottom: 0;
     width: 100%;
