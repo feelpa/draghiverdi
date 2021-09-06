@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     }).addTo(map);
 
-L.control.locate(keepCurrentZoomLevel = true).addTo(map);
+L.control.locate(initialZoomLevel = 16).addTo(map);
 
 var geojsonFeatures = new L.GeoJSON.AJAX('/res/data/vedovelle.geojson');
 geojsonFeatures.on('data:loaded', function(){
