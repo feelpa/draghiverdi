@@ -12,10 +12,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: auto;
     min-height: 15vh;
     border-bottom: 4px solid #004C00;
 }
 .cover-img {
+    aspect-ratio: 733 / 99;
     max-height: 15vh;
 }
 
